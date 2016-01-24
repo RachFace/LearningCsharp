@@ -10,6 +10,10 @@ namespace Practice1
     {
         static void Main(string[] args)
         {
+
+            string valueString = "Hello World";
+            Console.WriteLine(valueString);
+            Console.ReadKey();
         }
     }
 }
