@@ -13,15 +13,15 @@ namespace Practice1
 
         {
             Console.WriteLine("Please enter your name"); 
-            String newdate = Console.ReadLine();
-            Console.WriteLine("Your name is " + newdate);
+            String name = Console.ReadLine();
+            Console.WriteLine("Your name is " + name);
             Console.ReadKey();
 
             Console.WriteLine("Please enter your age");
             var input = Console.ReadLine();
-            int num1;
-            var MyAge = Int32.TryParse(input, out num1);
-            if (MyAge == true)
+            int agoodnumberaslongastheusertypedinavalidnumber;
+            var usertypedinagoodnumber = Int32.TryParse(input, out agoodnumberaslongastheusertypedinavalidnumber);
+            if (usertypedinagoodnumber == true)
             {
                 // The input was good and we have a new number in num1
             }
@@ -29,8 +29,8 @@ namespace Practice1
             {
                 // the input was bad and the user should feel bad
             }
-            var myDate = DateTime.Now;
-            var newDate = myDate.AddYears(- num1);
+            DateTime myDate = DateTime.Now;
+            DateTime newDate = myDate.AddYears(- num1);
             Console.WriteLine("Your birth year is " + newDate.Year);
             Console.ReadKey();
 
